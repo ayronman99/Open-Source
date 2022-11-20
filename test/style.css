@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    /* scroll-margin-top: 5rem; */
+    /* overflow-y: auto; */
+}
+
+h1 {
+    color: blue;
+}
+
+img {
+    border-radius: 50%;
+}
+
+/* .bg-info {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+} */
+
+
+.scrollspy-example {
+    position: absolute;
+    top: 10px;
+    width: 100vw;
+    border: 3px solid green;
+}

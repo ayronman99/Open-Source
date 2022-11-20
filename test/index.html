@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='./style.css' />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div id="test-handler"class="col-xs-2 col-md-4">
+        
+      </div>
+    </div>
+    <button style="position: absolute; top: 0; right: 50rem;"type="button" onclick="createPDF()"> Generate PDF </button>
+  </div>
+
+  <!--     <div class="d-flex justify-content-center align-items-center">
+
+        </div>
+        data-bs-spy="scroll" data-bs-offset="10" data-bs-target="#navbar-example2" tabindex="0"
+   
+    <nav id="navbar-example2" class="navbar bg-light px-3 sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <div>
+        
+        <div id="scrollspyHeading1" class="border border-success vh-100">
+            <h4 class="pt-5 mt-2">First heading</h4>
+            <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?</p>
+            
+        </div>
+        <div id="scrollspyHeading2" class="mb-5">
+            <h4 >Second heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore iusto, unde reprehenderit dignissimos libero ad ab pariatur maiores id nihil et voluptate, ullam, delectus sed nobis odio accusamus placeat. Accusamus!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?</p>
+        </div>
+        <div id="scrollspyHeading3" class="mb-5">
+            <h4 >Third heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore iusto, unde reprehenderit dignissimos libero ad ab pariatur maiores id nihil et voluptate, ullam, delectus sed nobis odio accusamus placeat. Accusamus!</p>
+        </div>
+        <div id="scrollspyHeading4" class="mb-5">
+            <h4>Fourth heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore iusto, unde reprehenderit dignissimos libero ad ab pariatur maiores id nihil et voluptate, ullam, delectus sed nobis odio accusamus placeat. Accusamus!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?</p>
+        </div>
+        <div id="scrollspyHeading5">
+            <h4>Fifth heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore iusto, unde reprehenderit dignissimos libero ad ab pariatur maiores id nihil et voluptate, ullam, delectus sed nobis odio accusamus placeat. Accusamus!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corporis maiores numquam a quidem temporibus dolorum est repellat nisi fugit, aliquid soluta recusandae atque unde reiciendis! Optio molestiae maxime sint?</p>
+        </div>
+        
+      </div> -->
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> 
+  <script type="text/javascript" src="test.js">  
+  </script>
+</body>
+
+</html>
